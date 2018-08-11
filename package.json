@@ -1,0 +1,122 @@
+{
+  "name": "Movy",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-native-scripts start",
+    "eject": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test": "jest"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  },
+  "dependencies": {
+    "expo": "^27.0.1",
+    "react": "16.3.1",
+    "react-native": "~0.55.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-prettier": "^2.6.2",
+    "eslint-plugin-react": "^7.10.0",
+    "jest-expo": "~27.0.0",
+    "prettier": "^1.14.2",
+    "react-native-scripts": "1.14.0",
+    "react-test-renderer": "16.3.1"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-expo"
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "transform-react-jsx-source"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "airbnb",
+      "prettier",
+      "prettier/react"
+    ],
+    "plugins": [
+      "react",
+      "import",
+      "prettier"
+    ],
+    "env": {
+      "jest": true
+    },
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": true,
+          "optionalDependencies": true,
+          "peerDependencies": true
+        }
+      ],
+      "prettier/prettier": [
+        2,
+        {
+          "useTabs": false,
+          "printWidth": 120,
+          "tabWidth": 2,
+          "singleQuote": true,
+          "bracketSpacing": true,
+          "jsxBracketSameLine": false,
+          "semi": false
+        }
+      ],
+      "semi": [
+        "error",
+        "never"
+      ],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "quotes": [
+        1,
+        "single",
+        "avoid-escape"
+      ],
+      "react/prefer-es6-class": [
+        0,
+        "always"
+      ],
+      "react/prefer-stateless-function": [
+        0,
+        {
+          "ignorePureComponents": true
+        }
+      ],
+      "react/jsx-filename-extension": 0,
+      "react/jsx-no-bind": [
+        2,
+        {
+          "ignoreRefs": false,
+          "allowArrowFunctions": false,
+          "allowBind": false
+        }
+      ],
+      "jsx-a11y/href-no-hash": "off"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules"
+  ]
+}
