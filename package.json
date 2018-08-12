@@ -24,6 +24,7 @@
     "eslint": "^5.3.0",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
+    "eslint-import-resolver-babel-module": "^4.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.1",
     "eslint-plugin-prettier": "^2.6.2",
@@ -43,7 +44,19 @@
           "transform-react-jsx-source"
         ]
       }
-    }
+    },
+    "plugins": [
+      [
+        "module-resolver",
+        {
+          "alias": {
+            "@screens": "./src/screens",
+            "@images": "./assets/images",
+            "@fonts": "./assets/fonts"
+          }
+        }
+      ]
+    ]
   },
   "eslintConfig": {
     "parser": "babel-eslint",
@@ -57,6 +70,17 @@
       "import",
       "prettier"
     ],
+    "settings": {
+      "import/resolver": {
+        "babel-module": {
+          "alias": {
+            "@screens": "./src/screens",
+            "@images": "./assets/images",
+            "@fonts": "./assets/fonts"
+          }
+        }
+      }
+    },
     "env": {
       "jest": true
     },
@@ -94,6 +118,7 @@
         "single",
         "avoid-escape"
       ],
+      "react/prop-types": 0,
       "react/prefer-es6-class": [
         0,
         "always"

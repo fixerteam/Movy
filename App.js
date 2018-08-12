@@ -1,8 +1,8 @@
 import React from 'react'
-import Movy from './src/App'
+import { First, Second, Third } from './src'
 
 export default class App extends React.Component {
   render() {
-    return <Movy />
+    return <First />
   }
 }
