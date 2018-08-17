@@ -29,5 +29,16 @@ export default StyleSheet.create({
     bottom: '40%',
     alignSelf: 'center',
     alignItems: 'center'
+  },
+  indicators: {
+    position: 'absolute',
+    bottom: '30%',
+    flexDirection: 'row',
+    alignSelf: 'center'
+  },
+  nextButton: {
+    position: 'absolute',
+    bottom: '10%',
+    alignSelf: 'center'
   }
 })
