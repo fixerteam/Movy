@@ -4,11 +4,11 @@ export default StyleSheet.create({
   title: {
     color: '#FFF',
     fontSize: 36,
-    fontFamily: 'SFProBold'
+    fontFamily: 'SF-Pro-Display-Bold'
   },
   description: {
     color: '#FFF',
     fontSize: 34,
-    fontFamily: 'SFProUltralight'
+    fontFamily: 'SF-Pro-Display-Ultralight'
   }
 })

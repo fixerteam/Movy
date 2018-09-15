@@ -1,6 +1,6 @@
 import React from 'react'
 import { View, Image, StatusBar } from 'react-native'
-import { LinearGradient } from 'expo'
+import LinearGradient from 'react-native-linear-gradient'
 import image from '@images/walk1.png'
 import Title from './components/title'
 import Indicators from './components/indicators'
