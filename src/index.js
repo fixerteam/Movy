@@ -1,7 +1,7 @@
 import { createStackNavigator } from 'react-navigation'
-import First from './screens/walkthrough/First'
-import Second from './screens/walkthrough/Second'
-import Third from './screens/walkthrough/Third'
+import First from './screens/walkthrough/first'
+import Second from './screens/walkthrough/second'
+import Third from './screens/walkthrough/third'
 
 export default createStackNavigator(
   {

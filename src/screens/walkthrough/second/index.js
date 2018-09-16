@@ -1,11 +1,11 @@
 import React from 'react'
 import { View, Image, StatusBar } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
-import image from '@images/walk2.png'
-import Title from './components/title'
-import Indicators from './components/indicators'
-import NextButton from './components/button'
-import styles from './style'
+import image from './walk2.png'
+import Title from '../components/title'
+import Indicators from '../components/indicators'
+import NextButton from '../components/button'
+import styles from '../style'
 
 const onNextClick = navigation => () => navigation.navigate('WalkthroughThird')
 

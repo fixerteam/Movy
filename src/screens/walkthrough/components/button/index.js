@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from 'react-native'
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import Touch from '@components/touch'
+import Touch from '../../../../components/touch'
 import styles from './style'
 
 const NextButton = ({ onPress, style, ...otherProps }) => (

@@ -1,149 +1,122 @@
 {
-  "name": "movy",
-  "version": "0.0.1",
-  "private": true,
-  "scripts": {
-    "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
-  },
-  "dependencies": {
-    "axios": "^0.18.0",
-    "ramda": "^0.25.0",
-    "react": "16.5.0",
-    "react-native": "0.57.0",
-    "react-native-dotenv": "^0.2.0",
-    "react-native-linear-gradient": "^2.4.2",
-    "react-native-vector-icons": "^5.0.0",
-    "react-navigation": "^2.14.2"
-  },
-  "devDependencies": {
-    "babel-eslint": "^9.0.0",
-    "babel-jest": "23.6.0",
-    "babel-plugin-module-resolver": "^3.1.1",
-    "eslint": "^5.6.0",
-    "eslint-config-airbnb": "^17.1.0",
-    "eslint-config-prettier": "^3.0.1",
-    "eslint-import-resolver-babel-module": "^4.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-jsx-a11y": "^6.1.1",
-    "eslint-plugin-prettier": "^2.6.2",
-    "eslint-plugin-react": "^7.11.1",
-    "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.45.3",
-    "prettier": "^1.14.2",
-    "react-test-renderer": "16.5.0"
-  },
-  "rnpm": {
-    "assets": [
-      "./assets/fonts"
-    ]
-  },
-  "jest": {
-    "preset": "react-native"
-  },
-  "babel": {
-    "presets": [
-      "module:metro-react-native-babel-preset"
-    ],
-    "plugins": [
-      [
-        "module-resolver",
-        {
-          "alias": {
-            "@components": "./src/components",
-            "@screens": "./src/screens",
-            "@images": "./assets/images",
-            "@fonts": "./assets/fonts"
-          }
-        }
-      ]
-    ]
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "extends": [
-      "airbnb",
-      "prettier",
-      "prettier/react"
-    ],
-    "plugins": [
-      "react",
-      "import",
-      "prettier"
-    ],
-    "settings": {
-      "import/resolver": {
-        "babel-module": {
-          "alias": {
-            "@components": "./src/components",
-            "@screens": "./src/screens",
-            "@images": "./assets/images",
-            "@fonts": "./assets/fonts"
-          }
-        }
-      }
+    "name": "movy",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node node_modules/react-native/local-cli/cli.js start",
+        "test": "jest"
     },
-    "env": {
-      "jest": true
+    "dependencies": {
+        "axios": "^0.18.0",
+        "ramda": "^0.25.0",
+        "react": "16.5.0",
+        "react-native": "0.57.0",
+        "react-native-dotenv": "^0.2.0",
+        "react-native-linear-gradient": "^2.4.2",
+        "react-native-vector-icons": "^5.0.0",
+        "react-navigation": "^2.14.2"
     },
-    "rules": {
-      "import/no-extraneous-dependencies": [
-        "error",
-        {
-          "devDependencies": true,
-          "optionalDependencies": true,
-          "peerDependencies": true
+    "devDependencies": {
+        "babel-eslint": "^9.0.0",
+        "babel-jest": "23.6.0",
+        "eslint": "^5.6.0",
+        "eslint-config-airbnb": "^17.1.0",
+        "eslint-config-prettier": "^3.0.1",
+        "eslint-plugin-import": "^2.14.0",
+        "eslint-plugin-jsx-a11y": "^6.1.1",
+        "eslint-plugin-prettier": "^2.6.2",
+        "eslint-plugin-react": "^7.11.1",
+        "jest": "23.6.0",
+        "metro-react-native-babel-preset": "0.45.3",
+        "prettier": "^1.14.2",
+        "react-test-renderer": "16.5.0"
+    },
+    "rnpm": {
+        "assets": [
+            "./assets/fonts"
+        ]
+    },
+    "jest": {
+        "preset": "react-native"
+    },
+    "babel": {
+        "presets": [
+            "module:metro-react-native-babel-preset"
+        ]
+    },
+    "eslintConfig": {
+        "parser": "babel-eslint",
+        "extends": [
+            "airbnb",
+            "prettier",
+            "prettier/react"
+        ],
+        "plugins": [
+            "react",
+            "import",
+            "prettier"
+        ],
+        "env": {
+            "jest": true
+        },
+        "rules": {
+            "import/no-extraneous-dependencies": [
+                "error",
+                {
+                    "devDependencies": true,
+                    "optionalDependencies": true,
+                    "peerDependencies": true
+                }
+            ],
+            "prettier/prettier": [
+                2,
+                {
+                    "useTabs": false,
+                    "printWidth": 100,
+                    "tabWidth": 2,
+                    "singleQuote": true,
+                    "bracketSpacing": true,
+                    "jsxBracketSameLine": false,
+                    "semi": false
+                }
+            ],
+            "semi": [
+                "error",
+                "never"
+            ],
+            "comma-dangle": [
+                "error",
+                "never"
+            ],
+            "quotes": [
+                1,
+                "single",
+                "avoid-escape"
+            ],
+            "no-use-before-define": 0,
+            "react/prop-types": 0,
+            "react/prefer-es6-class": [
+                0,
+                "always"
+            ],
+            "react/prefer-stateless-function": [
+                0,
+                {
+                    "ignorePureComponents": true
+                }
+            ],
+            "react/jsx-filename-extension": 0,
+            "react/jsx-no-bind": [
+                2,
+                {
+                    "ignoreRefs": false,
+                    "allowArrowFunctions": false,
+                    "allowBind": false
+                }
+            ]
         }
-      ],
-      "prettier/prettier": [
-        2,
-        {
-          "useTabs": false,
-          "printWidth": 100,
-          "tabWidth": 2,
-          "singleQuote": true,
-          "bracketSpacing": true,
-          "jsxBracketSameLine": false,
-          "semi": false
-        }
-      ],
-      "semi": [
-        "error",
-        "never"
-      ],
-      "comma-dangle": [
-        "error",
-        "never"
-      ],
-      "quotes": [
-        1,
-        "single",
-        "avoid-escape"
-      ],
-      "no-use-before-define": 0,
-      "react/prop-types": 0,
-      "react/prefer-es6-class": [
-        0,
-        "always"
-      ],
-      "react/prefer-stateless-function": [
-        0,
-        {
-          "ignorePureComponents": true
-        }
-      ],
-      "react/jsx-filename-extension": 0,
-      "react/jsx-no-bind": [
-        2,
-        {
-          "ignoreRefs": false,
-          "allowArrowFunctions": false,
-          "allowBind": false
-        }
-      ]
-    }
-  },
-  "eslintIgnore": [
-    "node_modules"
-  ]
+    },
+    "eslintIgnore": [
+        "node_modules"
+    ]
 }
